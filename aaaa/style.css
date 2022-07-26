@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-test: rgba(128, 128, 128, 0.233);
+    --color-default: white;
+
+    --color1: #D2872C;
+    --color2: #766F68;
+}
+
+
+html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    color: var(--color2);
+    font-size: 16px;
+
+    overflow-x: hidden;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--color-default);
+    height: 3.12rem;
+    gap: 4;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    font-size: 2vw;
+}
+#bars {
+    display: none;
+    margin-top: .8rem;
+    margin-right: 1em;
+    font-size: 2vw;
+}
+nav ul {
+    margin-top: 1rem;
+    display: flex;
+    list-style: none;
+    margin-right: .5em;
+}
+nav li {
+    margin-left: 1.06em;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color2);
+}
+nav .logo{
+    padding: 10px;
+    color: var(--color1);
+}
+
+header {
+    display: flex;
+    margin: 20px 0 20px 8vw;
+    position: relative;
+
+    margin-top: 5rem;
+}
+img {
+    position: absolute;
+    left: 30vw;
+    top: -4vw;
+    width: 60vw;
+    z-index: -1;
+}
+#prin h1{
+    width: 40vw;
+    font-size: 5vw;
+    line-height: 4vw;
+}
+#prin p {
+    margin: 3vw 0;
+    font-size: 2.35vw;
+    width: 40vw;
+    line-height: 3vw;
+}
+button {
+    box-sizing: border-box;
+    padding: 1vw 5.5vw;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 15px;
+    color: var(--color-default);
+    font-size: 3vw;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.61);
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        font-size: 2.5vw;
+    }
+    .logo {
+        width: 10px;
+        padding-left: 0;
+        margin-left: 0;
+    }  
+    #menu {
+        display: none;
+    }
+    #bars {
+        font-size: 4vw;
+        display: block;
+    }
+    
+
+    header {
+        margin-top: 8rem;
+    }
+    img {
+        position: absolute;
+        width: 60vw;
+        left: 11vw;
+        top: -24vw;
+    }
+    #prin {
+        margin-top: 10vw;
+    }
+    #prin h1, p, button{
+        width: 74vw;
+        text-align: center;
+        margin-left: 4vw;
+    }
+    #prin h1 {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    #prin p{
+        margin: 1vw 0 3vw;
+        margin-left: 4vw;
+        width: 74vw;
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    a, button {
+        padding: 2vw 10vw;
+        width: auto;
+        margin-left: 4vw;
+    }
+    button {
+        font-size: 6vw;
+    }
+}
