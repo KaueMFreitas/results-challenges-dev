@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+:root {
+    --Preto: #000000;
+    --Cinza: #1f1d1d;
+    --Cinza-claro: #494949;
+    --Branco: #B7B7B7;
+    --Verde: #046313;
+    --Azul: #044A7D;
+    --Amarelo: #725200;
+}
+
+body, head {
+    background-color: var(--Preto);
+    color: var(--Branco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Branco);
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    position: relative;
+    background-color: var(--Cinza);
+    width: 60vw;
+    height: 34vw;
+
+    margin: auto;
+    padding: .6rem;
+
+    display: grid;
+
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+img {
+    border-radius: 50%;
+
+    width: 15vw;
+    height: 15vw;
+
+    margin: 1.5vw .2rem;
+}
+
+#name {
+    margin: 6vw .6rem;
+}
+
+h1 {
+    font-size: 3vw;
+    margin: 0;
+}
+h2 {
+    font-size: 2.4vw;
+    margin: 0;
+}
+
+#edit {
+    background-color: var(--Cinza-claro);
+    border: none;
+    
+    display: flex;
+
+    position: absolute;
+    top: 2.5vw;
+    right: 2.5vw;
+
+    width: 6.2vw;
+    height: 2.2vw;
+
+    font-size: 1.5vw;
+
+    padding: .1rem;
+
+    color: var(--Branco);
+}
+#edit:hover {
+    background-color: var(--Cinza-claro);
+    border: 1px solid black;
+    padding: .05rem;
+}
+#edit p {
+    margin: 0;
+}
+
+#number {
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 3px;
+
+    width: 15vw;
+    height: 7vw;
+
+    color: white;
+
+    padding: 2vw;
+}
+.card h1 {
+    font-size: 2vw;
+}
+.card h2 {
+    font-size: 4.5vw;
+}
+
+.card:nth-child(1) {
+    background-color: rgb(0, 189, 0);
+}
+.card:nth-child(2) {
+    background-color: rgb(68, 68, 255);
+}
+.card:nth-child(3) {
+    background-color: rgb(255, 187, 60);
+}
+
+footer {
+    position: absolute;
+
+    bottom: 0px;
+    right: 10px;
+
+    font-size: 2vw;
+}
+
+footer p {
+    margin: .1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .flex {
+        display: block;
+    }
+
+    main {
+        margin-top: 20vw;
+        height: auto;
+
+        top: 25vw;
+    }
+
+    img {
+        height: 20vw;
+        width: 20vw;
+
+        position: absolute;
+        top: -12vw;
+        left: 23vw;
+    }
+
+    #name h1 {
+        font-size: 5vw;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    #name h2 {
+        font-size: 4.4vw;
+        text-align: center;
+    }
+
+    #edit {
+        display: flex;
+        position: static;
+        
+        width: 14vw;
+        height: 5vw;
+    
+        font-size: 3vw;
+    
+        padding: .4rem;
+
+        margin: auto auto 1rem;
+    }
+
+    .card {
+        width: 55vw;
+        height: 14vw;
+
+        margin: .6rem auto;
+        
+    }
+    .card h1 {
+        font-size: 3.5vw;
+    }
+    .card h2 {
+        font-size: 8.5vw;
+    }
+}
