@@ -144,6 +144,10 @@ li a:hover {
 
 @media screen and (max-width: 600px) {
 
+    body { 
+        overflow-x: hidden;
+    }
+
     .flex {
         display: block;
     }
@@ -182,13 +186,15 @@ li a:hover {
         display: flex;
 
         position: absolute;
-        bottom: 10rem;
+        bottom: 1rem;
 
         gap: 3rem;
     }
 
     .forms {
         width: 20rem;
+
+        overflow-x: hidden;
     }
     #form1 {
         bottom: -1rem;
@@ -196,7 +202,7 @@ li a:hover {
     }
     #form2 {
         top: 8rem;
-        right: -6rem;
+        right: -2rem;
     }
 
     #cup, 
